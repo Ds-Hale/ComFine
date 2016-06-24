@@ -1,6 +1,6 @@
 package com.comfine.javabean;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class Severcontent {
 	private int id;
@@ -8,7 +8,7 @@ public class Severcontent {
 	private String severcontent_name;
 	private String introduce;
 	private float price;
-	private Date up_date;
+	private String up_date;
 	private String sorts;
 	private String pic_path;
 	private String tel;
@@ -43,10 +43,10 @@ public class Severcontent {
 	public void setPrice(float price) {
 		this.price = price;
 	}
-	public Date getUp_date() {
+	public String getUp_date() {
 		return up_date;
 	}
-	public void setUp_date(Date up_date) {
+	public void setUp_date(String up_date) {
 		this.up_date = up_date;
 	}
 	public String getSorts() {

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>惠家E站</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/hjez.css">
+<style>
+</style>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		'sectionsColor': ['#eee','#333333', '#ccc', '#fff', 'black'],
+		'anchors': ['page0', 'page1', 'page2', 'page3','page4'],
+		'menu': '#menu',
+		'navigation': true,
+		'navigationPosition':'right',
+		'easing':'easeInOutQuad',
+		'scrollingSpeed':"800",
+		afterLoad: function(anchorLink, index){
+	
+			if(index == 1){
+     //第二页动画
+     			$('.section1').find('.img1').delay(100).animate({top: '0%'},{duration:1000,easing:"easeOutQuart"});
+				$('.section1').find('.img2').delay(100).animate({top: '54%'},{duration:1000,easing:"easeOutQuart"});
+				$('.section1').find('.img3').delay(600).animate({top: '4%'},{duration:1000,easing:"easeOutQuart"});
+				$('.section1').find('.img4').delay(600).animate({top: '0%'},{duration:1000,easing:"easeOutQuart"});
+				$('.section1').find('.img5').delay(600).animate({bottom: '0%'},{duration:1000,easing:"easeOutQuart"});
+				
+				
+			}
+				
+
+		if(index == 3){
+     //第二页动画
+				$('.section3').find('p').delay(100).animate({left: '400px'},{duration:1000,easing:"easeOutQuart"});
+				$('.section3').find('h3').delay(100).animate({left: '400px'}, 1000, 'easeOutQuart');}
+				
+		if(index ==4){
+			/*/$("#img1,#img2,#img3").removeClass("active");*/
+			$('.section4').find('p').delay(100).animate({top: '-200px'},{duration:1000,easing:"easeInOutBack"});
+			$('.section4').find('h3').animate({top: '-200px'},{duration:1000,easing:"easeInOutBack"});
+//			$('.section3').find('.img').delay(100).animate({left :'100px'},{duration:1000,easing:"easeInOutBack"});
+			
+		}
+			},
+		
+	onLeave: function(index, direction){
+		//第二页动画
+		$('.section1').find('.img1').delay(100).animate({top: '-1000%'},{duration:1000,easing:"easeOutQuart"});
+				$('.section1').find('.img2').delay(100).animate({top: '1000%'},{duration:1000,easing:"easeOutQuart"});
+				$('.section1').find('.img3').delay(0).animate({top: '-1006%'},{duration:1000,easing:"easeOutQuart"});
+				$('.section1').find('.img4').delay(0).animate({top: '1000%'},{duration:1000,easing:"easeOutQuart"});
+				$('.section1').find('.img5').delay(0).animate({bottom: '1000%'},{duration:1000,easing:"easeOutQuart"});
+		if(index == 3){
+
+			$('.section3').find('p').animate({left: '-120%'}, 1000, 'easeInOutBack');
+			$('.section3').find('h3').animate({left: '120%'}, 1000, 'easeInOutBack');
+
+		}
+		if(index ==3+1){
+			/*/$("#img1,#img2,#img3").removeClass("active");*/
+			$('.section4').find('p').delay(100).animate({top: '1000px'},{duration:1000,easing:"easeInOutBack"});
+			$('.section4').find('h3').delay(0).animate({top: '-1000px'},{duration:1000,easing:"easeInOutBack"});
+//			$('.section3').find('.img').delay(100).animate({left :'-1000px'},{duration:1000,easing:"easeInOutBack"});
+		}
+	}
+
+	});
+
+
+
+});
+</script>
+</head>
+
+<body>
+
+<ul id="menu">
+	<li data-menuanchor="page0" class="active"><div><a href="#page0">E家服务</a></div></li>
+	<li data-menuanchor="page1"><div><a href="#page1">E家新闻</a></div></li>
+	<li data-menuanchor="page2"><div><a href="#page2">E家社区</a></div></li>
+	<li data-menuanchor="page3"><div><a href="#page3">E家我的</a></div></li>
+	<li data-menuanchor="page4"><div><a href="#page4">E家我的</a></div></li>
+</ul>
+
+<div id="dowebok">
+
+	<div class="section section1">
+
+	<div class="img_list">
+	<ul>
+  	<li><img src="images/bck2_list/bck2_2.png" class="img1"></li>
+  	<li><img src="images/bck2_list/bck2_1.png" class="img2"></li>
+  	<li><img src="images/bck2_list/bck2_4.png" class="img3"></li>
+  	<li><img src="images/bck2_list/bck2_3.png" class="img4"></li>
+  	<li><img src="images/bck2_list/bck2_5.png" class="img5"></li>
+	<ul>
+	</div>
+	<h3>Com.Fine</h3>
+	<p>来到金慧家，不吃亏，不上当！来到金慧家，不吃亏，</br>不上当！来到金慧家，不吃亏，不上当！来到金慧家</br>，不吃亏，不上当！来到金慧家，不吃亏，不上当！</br>来到金慧家，不吃亏，不上当！</p>
+		</div>
+	<div class="section section2 active">
+		<img src="images/bck1.png">
+		
+		<h3>E家服务</h3>
+		<p>惠家E站，服务至上！</p>
+	
+
+	</div>
+	<div class="section section3">
+	<div class="imgContainer">
+		<img src="images/1.jpg"  id="img1"></img>
+		<img src="images/2.jpg"  id="img2"></img>
+		<img src="images/3.jpg"  id="img3"></img>
+	</div>
+	 <div class="hide"></div>
+		<h3>E家新闻</h3>
+		<p>何止是新闻</p>
+	</div>
+	<div class="section section4">
+	<div class="hide"></div>
+	<div class="img"><img src="images/bck4.png"></div>
+		<h3>E家社区</h3>
+		<p>想不出来，暂时放着！</p>
+	</div>
+	<div class="section section5">
+		<h3>E家我的</h3>
+		<p>妈妈再也不用担心我的学习了</p>
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

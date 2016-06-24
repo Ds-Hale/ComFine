@@ -98,17 +98,7 @@ public class SeverContentJdbcTemplate implements SeverContentDao {
 	public static void setSevercontentJdbc(SeverContentJdbcTemplate severcontentJdbc) {
 		SeverContentJdbcTemplate.severcontentJdbc = severcontentJdbc;
 	}
-	@Override
-	public List<Severcontent> getContent(List<String> list) {
-	List <Severcontent> contentlist = new ArrayList<Severcontent>();
-	Iterator<String> idlist = list.iterator();
-	while(idlist.hasNext()){
-		int id = Integer.parseInt(idlist.next());
-		Severcontent s = this.getContentById(id);
-		contentlist.add(s);
-	}
-	return contentlist;
-	}
+	
 
 
 }

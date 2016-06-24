@@ -18,7 +18,7 @@ public class SeverContentMapper implements RowMapper<Severcontent> {
 		severcontent.setSevercontent_name(rs.getString("severcontent_name"));
 		severcontent.setIntroduce(rs.getString("introduce"));
 		severcontent.setPrice(rs.getFloat("price"));
-		severcontent.setUp_date(rs.getDate("up_date"));
+		severcontent.setUp_date(rs.getDate("up_date").toString());
 		severcontent.setSorts(rs.getString("sorts"));
 		severcontent.setPic_path(rs.getString("pic_path"));
 		severcontent.setTel(rs.getString("tel"));

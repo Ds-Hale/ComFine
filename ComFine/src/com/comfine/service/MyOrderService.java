@@ -17,7 +17,7 @@ import com.comfine.jdbctemplate.SeverContentJdbcTemplate;
 
 @Service
 public class MyOrderService {
-	OrderJdbcTemplate oJdbc = OrderJdbcTemplate.getOrderInstance();
+	OrderJdbcTemplate oJdbc = OrderJdbcTemplate.getOrderJdbcTemplate();
 	public ModelAndView myorder(int id,ModelMap model) {
 		Order order = oJdbc.getMyOrderById(id);
 		

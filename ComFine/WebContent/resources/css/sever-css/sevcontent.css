@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    padding: 0px;
+}
+body{ background:#e0e0e0;}
+ul, ol {
+    list-style: none;
+    display: block;
+    margin: 0 0;
+}
+
+a {
+    margin: 0 0;
+    text-decoration: none;
+}
+
+a:active {
+    color: #0033FF;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: white
+}
+
+p {  margin: 0 0;  font-family: "Microsoft YaHei UI";
+}
+
+.news {
+    height: auto;
+    margin-left: auto;
+}
+
+.header {
+    width: 100%;
+    height: 244px;
+    background: #ccc;
+    margin: 0px auto;
+}
+
+.header_top {
+    width: 100%;
+    height: 100px;
+    background: #eee;
+}
+
+.header_bottom {
+    width: 100%;
+    height: 114px;
+    background: #fff;
+}
+
+.header_bottom li {
+    float: left;
+    width: 20%
+}
+
+.title {
+    width: 100%;
+    height: auto
+}
+
+.title_box {
+    height: 114px;
+    border: 0px solid red;
+}
+
+.title_box.b1 {
+    background: black;
+}
+
+.title_box.b2 {
+    background: #E0EEE0;
+}
+
+.title_box.b3 {
+    background: #8B8989;
+}
+
+.title_box.b4 {
+    background: #C1CDC1;
+}
+
+.title_box.b5 {
+    background: #8B7D7B;
+}
+
+.middle {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+
+}
+.sorts_active{
+	background: yellow;
+	color:white;
+}
+.top {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.top:hover {
+    background: black;
+}
+
+.top p :hover {
+    color: white;
+}
+
+.top .pic_title {
+    float: left;
+    width: 100%;
+    height: 30%;
+}
+
+.top .pic_content {
+    width: 100%;
+    height: 70%;
+}
+
+.display_content {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background:#C1CDC1;
+    float: left;
+}
+
+.middle .img {
+    margin: 0 0;
+    float: left;
+    width: 10000px;
+    position: absolute;
+    height: 100%;
+}
+
+.middle .img img {
+    width: 100%;
+    height: 100%;
+}
+.middle .img ul{margin: 0 0;}
+.middle .img li {float: left;}
+
+.middle .num {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    text-align: center;
+    font-size: 0px;
+}
+.middle .num img{
+    width: 100%;
+    height:100%;
+}
+.middle .num li {
+    width: 60px;
+    height: 50px;
+    border:5px solid #888;
+    /*border-radius: 50%;*/
+    display: inline-block;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.middle .num li.on {
+    background: #F60;
+}
+
+.bkground {
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 15%;
+    height: auto;
+    position: relative;
+    zoom:1;overflow:hidden;
+}
+
+.xiadan{width:610.91px;height:400px;float: left;position: relative;background: #f1f1f1;padding-left: 15px;overflow: hidden}
+.xiadan_row1{width:100%;height:20%;margin-bottom: 10px;}
+.xiadan_row1 p{font-size: 30px;}
+
+.xiadan_row2{width:100%;height:60%;margin:5px 10px;}
+.xiadan_row2 p{font-size: 13px;font-weight: 500}
+
+.sorts{width:60px;text-align: center;float:left}
+.sorts p {font-size:15px;padding: 5px 5px;margin: 5px 5px;width:auto;height:auto;border:3px solid #888}
+.sorts p :hover {border:3px solid #F60}
+
+.xiadan_row3{width:100%;height:20%;margin:0 5px;text-align: center;}
+
+.xiadan_btn{margin:0 auto;background:#f40;width: 70%;height: auto;text-align: center;}
+.xiadan_btn strong{font-family:verdana,arial;line-height:2;color:white;font-weight:700;font-size: 23px;letter-spacing: 5px}
+
+.content{width: 80%;height:auto;float:left;padding-top:20px;
+    padding-right:20%;padding-bottom: 20px;margin-bottom:5px;position: relative;background:#e0e0e0}
+.content ul{padding-left:20px;}
+.content li{float:left;width:24%;padding-left: 5px;padding-bottom: 4px;color:#666;font-size: 12px}
+
+.pic_content{width:100%;height:auto;float: left;overflow: hidden}
+.pic_content_img{width:100%;height:auto;padding-bottom: 20px;}
+.pic_content_img img{width:100%;height: 100%}
+
+.xiadan_frame{width:380px;height:500px;border-radius: 15px;background: #646464;padding: 20px;position: relative}
+.xiadan_frame p{color:#f7f7f7}
+.xiadan_frame_row1{width:100%;height:auto;padding-bottom:15px;border-bottom:1px solid #a5a5a5}
+.xiadan_frame_row1 p{font-size:35px;}
+.xiadan_frame_row2{width:100%;height:20%;border-bottom:1px solid #a5a5a5;padding-top:5px;}
+.xiadan_frame_row2 p{font-size: 20px;}
+.xiadan_frame_row3{width:100%;height:40%;border-bottom:1px solid #a5a5a5;padding-top:5px;}
+.xiadan_frame_row3 p{font-size:15px;}
+.xiadan_frame_row4{width:100%;height:auto;padding-top:10%}
+.xiadan_frame_row4 .xiadan_btn{background:#f1f1f1;}
+.xiadan_frame_row4 .xiadan_btn p{color:#434343;line-height:3;font-size:20px;}
+
+.footer{position: relative;margin-top:100px;float: left;left: 0px;bottom: 0px;width: 100%;height: 60px;background: black;text-align: center  }
+.footer p{font-size: 15px;color:white;text-align: center;padding-top:23px}
+.footer a{font-size: 15px;text-align:center;padding-top:25px}
+.footer_col1{width:10%;height:100%;float:left}
+.footer_col2{width:20%;height:100%;float:left}
+.footer_col3{width:58%;height:100%;float:left}
+.footer_col4{width:6%;height:100%;float:left;padding-top: 23px}
+.footer_col4 a{color: white;margin-top: 25px}
+.footer_col4:hover{background: white;}
+.footer_col4:hover a{color:black;}
+
+.triangle-up {  margin:0 auto;  width:0;  height:0;  border-left: 20px solid transparent;  border-right: 20px solid transparent;  border-bottom: 40px solid red; border-bottom-color:#646464; }
+.confirm_order {display: none;float: left; position: absolute;left:500px;top:550px;}

@@ -1,0 +1,72 @@
+
+*{padding: 0px;}
+#menu { margin: 0; padding: 0; position: fixed; left: 0px; top: 0px; list-style-type: none; z-index: 70;width: 100%}
+#menu li { float: left; font-size: 20px;width:20%;color: white}
+#menu a { float: left; padding: 20px 50px;  color: white; text-decoration: none;}
+#menu div{width: 100%; height: 60px;background: black;opacity:0.8;float: left;text-align: center;color: white;}
+#menu .active div { color: black; background-color: white;text-align: center}
+#menu .active  a{color: black;text-align: center;}
+
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;overflow: hidden;}
+
+/*第一页的样式*/
+.section1 h3{color: black;font-size: 80px;top:200px;font-family: ikaros}
+.section1 p,h3{position: absolute;left: 5%}
+.section1 p{font-size: 14px;top: 400px;font-family: ikaros;color: black}
+.section1 img{position: absolute;}
+.section1 .img1{top:-1000px;left:50% ;width: 300px;height:300px;}
+.section1 .img2{left: 55%;width:100px;height: 250px; top:-1000%;/*transition:all 1s linear 0.7s;*/}
+.section1 .img3{left: 61%;width:140px;height: 380px; top:-100%;}
+.section1  .img4{left: 71%;top: 1030%;width: 288px;height: 390px;}
+.section1  .img5{left: 70%;bottom: 1000%;width: 150px;height: 200px;}
+
+
+/*第二页的样式*/
+.section2 h3,p{color: white;position: relative;left: 2000px;transition-property: all;transition-duration: 1s;transition-delay: 0s;  }
+.section2{background: #333333}
+.section2 img{left: 80px;position: relative;}
+.section2 h3,p{top:-200px;}
+.section2.active h3,p{left: 0px;}
+.section2.active h3,p{left: 0px;}
+
+/*第仨页的样式*/
+.section3 {background:url("../images/news.jpg"); background-repeat: no-repeat;}
+.section3 img{transition: all 0.7s ease 1s;
+-moz-transition:all 0.7s ease 1s;
+-webkit-transition:all 0.7s ease 1s;
+-o-transition:all 0.7s linear 1s;}
+.section3 .imgContainer{position: absolute;display: block;}
+.section3 .imgContainer img{width: 200px;height: 200px;position: absolute;}
+#img1 #img2 #img3{left: 0px;}
+.section3.active #img1{z-index: 1}
+.section3.active #img2{transform: translate3d(100px,100px,0px);z-index: 2}
+.section3.active #img3{transform: translate3d(200px,200px,0px);z-index: 3}
+.section3 p{position: relative;left: -120%;top:40px;}
+.section3 h3{position: relative;right: -120%;}
+.section3 .hide{top: 0px;}
+
+
+/*第四页的样式*/
+.section4{overflow: hidden}
+.section4 {background:url(../images/shequ2.jpg);}
+.hide{width: 100%;height: 100%;background:black;opacity: 0.3;position:absolute;}
+.section4 .img{position: relative;left:0px;transform:  rotateZ(-110deg);transition-property: all;transition-duration: 1s;transition-delay: 1.7s}
+.section4.active .img{transform:  rotateZ(360deg);left: 0px}
+.section4 h3{color: #eee;position: relative;top: -220%;left: 0%}
+.section4 p{color: white;position: relative;top: -320%;}
+
+
+
+/*第五页的样式*/
+.section5 p{ color: #eee;top:3%;position: relative;transition-property: all;transition-duration: 2s;transition-delay: 0.7s;}
+.section5.active p{transform: rotateX(360deg)}
+.section5{background:url(../images/shequ.jpg);}
+.section5 h3{ color: #eee;position: relative;left: 0%}
+
+
+
+/*字体*/
+@font-face { font-family: ikaros;src:url('Bariol_Regular.otf'),}
+
+
+
